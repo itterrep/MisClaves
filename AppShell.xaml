@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="MisClaves.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:views="clr-namespace:MisClaves.Views"
+    Shell.BackgroundColor="{StaticResource Acent}"
+    Shell.ForegroundColor="{StaticResource Black}"
+    Shell.TitleColor="{StaticResource Black}"
+    Shell.UnselectedColor="{StaticResource Black}"
+    Title="MisClaves">
+
+    <ShellContent
+        Title="Mis Claves"
+        ContentTemplate="{DataTemplate views:CredencialesPage}"
+        Route="CredencialesPage" />
+
+</Shell>

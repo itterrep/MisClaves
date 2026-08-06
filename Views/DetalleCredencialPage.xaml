@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MisClaves.Views.DetalleCredencialPage"
+             Title="Credencial">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="15">
+
+            <Label Text="URL" FontAttributes="Bold" />
+            <Entry x:Name="UrlEntry" Placeholder="https://ejemplo.com" Keyboard="Url" />
+
+            <Label Text="Usuario" FontAttributes="Bold" />
+            <Entry x:Name="UsuarioEntry" Placeholder="usuario o email" />
+
+            <Label Text="Contraseña" FontAttributes="Bold" />
+            <Grid ColumnDefinitions="*, Auto">
+                <Entry x:Name="PassEntry"
+                       Grid.Column="0"
+                       Placeholder="contraseña"
+                       IsPassword="True" />
+                <Button x:Name="VerPassButton"
+                        Grid.Column="1"
+                        Text="👁"
+                        Clicked="OnVerPassClicked" />
+            </Grid>
+
+            <Label Text="Comentarios" FontAttributes="Bold" />
+            <Editor x:Name="ComentariosEditor" Placeholder="notas adicionales" HeightRequest="100" />
+
+            <Button x:Name="GuardarButton"
+                    Text="Guardar"
+                    Clicked="OnGuardarClicked"
+                    Margin="0,20,0,0" />
+
+            <Button x:Name="EliminarButton"
+                    Text="Eliminar"
+                    TextColor="White"
+                    BackgroundColor="{StaticResource Error}"
+                    Clicked="OnEliminarClicked"
+                    IsVisible="False" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
