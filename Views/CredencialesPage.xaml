@@ -4,11 +4,11 @@
              x:Class="MisClaves.Views.CredencialesPage"
              Title="Mis Claves">
 
-    <ContentPage.ToolbarItems>
+    <!--<ContentPage.ToolbarItems>
         <ToolbarItem IconImageSource="aboutas_bw.png"
                      Text="Acerca de"
                      Clicked="OnAcercaDeClicked" />
-    </ContentPage.ToolbarItems>
+    </ContentPage.ToolbarItems>-->
 
     <Grid RowDefinitions="*, Auto">
 
