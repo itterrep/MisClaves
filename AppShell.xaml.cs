@@ -10,7 +10,6 @@ namespace MisClaves
 
             // Registramos la ruta "detalle" para poder navegar con Shell.Current.GoToAsync("detalle")
             Routing.RegisterRoute("detalle", typeof(DetalleCredencialPage));
-            Routing.RegisterRoute("acercade", typeof(AcercaDePage));
         }
     }
 }

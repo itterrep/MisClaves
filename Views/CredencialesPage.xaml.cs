@@ -37,8 +37,4 @@ public partial class CredencialesPage : ContentPage
         await Shell.Current.GoToAsync("detalle");
     }
 
-    private async void OnAcercaDeClicked(object sender, EventArgs e)
-    {
-        await Shell.Current.GoToAsync("acercade");
-    }
 }

@@ -4,12 +4,6 @@
              x:Class="MisClaves.Views.CredencialesPage"
              Title="Mis Claves">
 
-    <!--<ContentPage.ToolbarItems>
-        <ToolbarItem IconImageSource="aboutas_bw.png"
-                     Text="Acerca de"
-                     Clicked="OnAcercaDeClicked" />
-    </ContentPage.ToolbarItems>-->
-
     <Grid RowDefinitions="*, Auto">
 
         <CollectionView x:Name="CredencialesList"

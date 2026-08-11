@@ -21,7 +21,6 @@ namespace MisClaves
             builder.Services.AddSingleton<CredentialRepository>();
             builder.Services.AddTransient<CredencialesPage>();
             builder.Services.AddTransient<Views.DetalleCredencialPage>();
-            builder.Services.AddTransient<Views.AcercaDePage>();
 
 #if DEBUG
             builder.Logging.AddDebug();
